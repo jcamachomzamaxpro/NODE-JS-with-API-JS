@@ -1,0 +1,45 @@
+-------------------------------------------------------
+
+se crea una carpeta llamada backend 
+
+luego en la terminal del visual:
+
+cd backend 
+
+npm init -y
+
+npm i express
+
+luego se crea la carpeta source dentro de backend
+
+dentro de source se crean las carpetas controllers, db y routes
+
+se crean los archivos app.js, config.js y index.js en la carpeta src.
+
+Se va al package.json y se modifica manualmente:
+debajo de description se coloca un "type" y module
+
+luego se meten cosas en las app.js, config.js y index.js
+
+luego en el package.json y se cambia en scripts el "test" a "dev" seguido de "node " y la ruta del archivo 
+
+listo, se procede a ejecutar el servidor con:
+
+npm run dev
+
+ya listo se procede a instalar nodemon, que nos actualiza el servidor:
+
+npm i -D nodemon
+
+(la D en mayuscula obligatorio)
+
+(esto nos genera el "devDependencies" en package.json)
+
+y para que nos funcione tenemos que irnos a package.json y en "scripts" cambiarle el "node" por "nodemon", quedaria asi: "dev": 
+"scripts": {
+    "dev": "nodemon src/index.js"
+}
+
+-------------------------------------------------------
+luego haremos las rutas que es la respuesta a nuestro servidor
+-------------------------------------------------------
